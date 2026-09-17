@@ -106,4 +106,16 @@ public class ContactBook {
         }
         return ret;
     }
+
+    //EP command
+    public boolean equalNumber(){
+        for(int i =0; i<counter; i++){
+            Contact contact = contacts[i];
+            for(int j = i +1; j<counter; j++ ){
+                Contact contact1 = contacts[j];
+                if (contact.getPhone() == contact1.getPhone()) return true;
+            }
+        }
+        return false;
+    }
 }
