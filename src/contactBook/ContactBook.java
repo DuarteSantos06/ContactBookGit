@@ -95,13 +95,13 @@ public class ContactBook {
 
 
     //GN command
-    public String searchContact(int phoneNumber){
-        String ret = "";
+    public Contact searchContact(int phoneNumber){
+        Contact ret = null;
         initializeIterator();
         while(hasNext()) {
             Contact tmp = next();
             if (tmp.getPhone() == phoneNumber) {
-                ret = tmp.getName();
+                ret = tmp;
             }
         }
         return ret;
