@@ -98,10 +98,12 @@ public class ContactBook {
     public Contact searchContact(int phoneNumber){
         Contact ret = null;
         initializeIterator();
-        while(hasNext()) {
+        boolean found = false;
+        while(!found && hasNext()) {
             Contact tmp = next();
             if (tmp.getPhone() == phoneNumber) {
                 ret = tmp;
+                found = true;
             }
         }
         return ret;

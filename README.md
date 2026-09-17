@@ -1,4 +1,9 @@
 # ContactBookGit
+
+Duarte José Palma Santos, djp.santos@campus.fct.unl.pt, 70847
+Gui Martins, gh.martins@campus.fct.unl.pt, 71003
+Pedro Martins, pms.martins@campus.fct.unl.pt, 71440
+
 This is a starter kit for the first lab of the Software Engineering Course.
 Fork this project to make your own version of it.
 
