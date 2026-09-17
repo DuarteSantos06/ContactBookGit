@@ -93,4 +93,17 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+
+    //GN command
+    public String searchContact(int phoneNumber){
+        String ret = "";
+        initializeIterator();
+        while(hasNext()) {
+            Contact tmp = next();
+            if (tmp.getPhone() == phoneNumber) {
+                ret = tmp.getName();
+            }
+        }
+        return ret;
+    }
 }
